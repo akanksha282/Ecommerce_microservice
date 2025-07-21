@@ -3,6 +3,8 @@ const User = require("../models/userschema.js");
 const bcrypt = require('bcrypt');
 const jwt = require("jsonwebtoken");
 const axios = require("axios");
+const ORDER_SERVICE_URL = 'https://orderservices-hria.onrender.com';
+
 
 const axiosWithRetry=require("../axioswithRetry.js")
 
@@ -80,7 +82,7 @@ const deleteUserById = async (req, res) => {
 
   try {
     // Notify Order Service
-    await axiosWithRetry.delete(`http://localhost:5000/api/orders/${userId}`, 
+    await axiosWithRetry.delete(`${ORDER_SERVICE_URL}/api/orders/${userId}`, 
           { 
            headers: { 'x-api-key': process.env.API_KEY,
            
