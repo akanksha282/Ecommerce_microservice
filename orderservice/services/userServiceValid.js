@@ -1,5 +1,5 @@
 const axioswithRetry = require('../axioswithRetry.js');
-const USER_SERVICE_URL = 'http://localhost:3000';
+const USER_SERVICE_URL = 'https://userservice-7uoz.onrender.com';
 
 async function validateUser(userId,token) {
   console.log("ii")
