@@ -1,4 +1,4 @@
-const axioswithRetry = require('../../shared/axioswithRetry');
+const axioswithRetry = require('../axioswithRetry.js');
 const USER_SERVICE_URL = 'http://localhost:3000';
 
 async function validateUser(userId,token) {

@@ -4,7 +4,7 @@ const bcrypt = require('bcrypt');
 const jwt = require("jsonwebtoken");
 const axios = require("axios");
 
-const axiosWithRetry=require("../../shared/axioswithRetry.js")
+const axiosWithRetry=require("../axioswithRetry.js")
 
 // REGISTER
 const registerUser = async (req, res) => {
