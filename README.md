@@ -1,6 +1,6 @@
 ## 🛒 E-Commerce Microservices Backend
 
-A e-commerce backend system built using Node.js, Express, and MongoDB following the microservices architecture.It includes two core services: User Service and Order Service, with inter-service communication and deployment via Render.
+A e-commerce backend system built using Node.js, Express, and MongoDB following the microservices architecture.It includes two core services: User Service and Order Service, with inter-service communication.
 
 ## 📌 Introduction
 
@@ -72,23 +72,23 @@ This project demonstrates how to build a scalable e-commerce backend with:
 | `orderservice/routes/orderRoutes.js` | All order-related API routes              |
 
 ## Api Endpoints
-### 📌 User Service - API Endpoints(api/users)
+### 📌 User Service - API Endpoints
 
 | Method | Endpoint                   | Description                      |
 |--------|----------------------------|----------------------------------|
-| POST   | `/`                | Register a new user              |
-| POST   | `/login`                   | User login and JWT generation    |
-| GET    | `/:id`               | Get user details by ID           |
-| DELETE | `/:id`               | Delete user by ID and notify Order Service |
+| POST   | `api/user`                | Register a new user              |
+| POST   | `api/user/login`                   | User login and JWT generation    |
+| GET    | `api/user/:id`               | Get user details by ID           |
+| DELETE | `api/user/:id`               | Delete user by ID and notify Order Service |
 
 
-### 📦 Order Service - API Endpoints(api/orders)
+### 📦 Order Service - API Endpoints
 
 | Method | Endpoint                   | Description                      |
 |--------|----------------------------|----------------------------------|
-| POST   | `/`                  | Create a new order               |
-| GET    | `/:id`              | Get order details by UserID          |
-| DELETE | `/:id`                | Delete all orders of a user       |
+| POST   | `api/order`                  | Create a new order               |
+| GET    | `api/order/:id`              | Get order details by UserID          |
+| DELETE | `api/order/:id`                | Delete all orders of a user       |
 
 ### ⚙️ Function Descriptions
 - registerUser → Validates input and registers new user.
@@ -107,6 +107,17 @@ This project demonstrates how to build a scalable e-commerce backend with:
 - MongoDB database per service
 - No shared schemas
 - Services communicate only via HTTP APIs
+
+| Requirement                       | Fulfilled |
+| --------------------------------- | --------- |
+| Microservices architecture        | ✅         |
+| Separate DBs per service          | ✅         |
+| Inter-service communication       | ✅         |
+| JWT authentication                | ✅         |
+| Retry mechanism for HTTP failures | ✅         |
+| Clean code and modular structure  | ✅         |
+
+
 
 
 
