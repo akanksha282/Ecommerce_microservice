@@ -43,7 +43,7 @@ const getOrderById = async (req, res) => {
       );
     }
 
-    const order = await Order.find({ userId: mongoose.Types.ObjectId(userId) });
+    const orders = await Order.find({ userId: new mongoose.Types.ObjectId(userId) });
     console.log(order)
    
 
@@ -55,8 +55,9 @@ const getOrderById = async (req, res) => {
   } 
   catch (err) 
   {
+    console.error('Error fetching orders:', err);
     res.status(500)
-    .json({ message: 'Server error' });
+    .json({ message: 'Server error',error: err.message });
   }
 };
 
