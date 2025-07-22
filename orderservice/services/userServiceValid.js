@@ -5,7 +5,7 @@ async function validateUser(userId,token) {
   console.log("ii")
   try {
     console.log("went")
-    const response = await axioswithRetry.get(`${USER_SERVICE_URL}/api/users/${userId}`, {
+    const response = await axioswithRetry.get(`${USER_SERVICE_URL}/api/user/${userId}`, {
       headers: {
         'x-api-key': process.env.API_KEY ,    
         'Authorization': `Bearer ${token}`,        
