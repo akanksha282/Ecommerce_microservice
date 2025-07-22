@@ -113,6 +113,28 @@ This project demonstrates how to build a scalable e-commerce backend with:
 | Clean code and modular structure  | ✅         |
 
 
+### Postman Testing
+Creating User
+<img width="1920" height="1080" alt="Screenshot (584)" src="https://github.com/user-attachments/assets/96b6e8b8-a1b2-4ee4-95a1-807438b11058" />
+Login User
+<img width="1920" height="1080" alt="Screenshot (585)" src="https://github.com/user-attachments/assets/c760940a-81a3-49be-86b3-4d7c899cdc50" />
+Get User By UserID
+<img width="1920" height="1080" alt="Screenshot (581)" src="https://github.com/user-attachments/assets/339dbfaa-76e8-419a-8713-04fe12e3e0a8" />
+Creating Order
+<img width="1920" height="1080" alt="Screenshot (580)" src="https://github.com/user-attachments/assets/35547186-b295-46c2-9ead-ac1789395828" />
+Order info by UserID
+<img width="1920" height="1080" alt="Screenshot (582)" src="https://github.com/user-attachments/assets/9d8a438e-d887-4e93-a19b-cca2bb22b080" />
+Delete User by ID
+<img width="1920" height="1080" alt="Screenshot (583)" src="https://github.com/user-attachments/assets/5c3f2180-426a-478a-a686-6efbb9468169" />
+Verifying if deleted user still have order entry
+<img width="1920" height="1080" alt="Screenshot (586)" src="https://github.com/user-attachments/assets/7b20a239-91fa-424f-9d6d-a48ed3ef1e74" />
+
+
+
+
+
+
+
 
 
 
