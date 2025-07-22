@@ -9,7 +9,7 @@ const userRoutes=require('./routes/userRoutes.js')
 
 app.use(express.json());
 connectDB()
-app.use("/api/users", userRoutes);
+app.use("/api/user", userRoutes);
 const PORT=3000;
 
 app.listen(PORT,()=>{
