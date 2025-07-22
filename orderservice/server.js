@@ -8,7 +8,7 @@ const orderRoutes=require('./routes/orderRoutes.js')
 app.use(express.json())
 connectDB()
 
-app.use('/api/orders',orderRoutes);
+app.use('/api/order',orderRoutes);
 const PORT=5000
 
 app.listen(PORT,()=>{
