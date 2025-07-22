@@ -56,11 +56,6 @@ This project demonstrates how to build a scalable e-commerce backend with:
 - User Service runs on: http://localhost:3000
 - Order Service runs on: http://localhost:5000
 
-## 🌐 Accessing the Application (Deployed)
- - ServiceEndpoint
-    - User Service	https://userservice-7uoz.onrender.com
-    - Order Service	 https://orderservices-hria.onrender.com
-
 ### 📁 Key Files
 
 | File Path                        | Description                                      |
